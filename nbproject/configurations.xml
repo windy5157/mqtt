@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles" displayName="头文件" projectFiles="true">
+      <itemPath>inc/Thread.h</itemPath>
+      <itemPath>inc/hiredis.h</itemPath>
+      <itemPath>inc/mqtt_biz_info.h</itemPath>
+      <itemPath>inc/mqtt_biz_redis.h</itemPath>
+      <itemPath>inc/mqtt_cfg.h</itemPath>
+      <itemPath>inc/mqtt_cfg_default_parms.h</itemPath>
+      <itemPath>inc/mqtt_ft_server_on_msg_arrvd.h</itemPath>
+      <itemPath>inc/mqtt_types.h</itemPath>
+      <itemPath>inc/mutex_type.h</itemPath>
+      <itemPath>inc/redis_cfg.h</itemPath>
+      <itemPath>inc/redis_cfg_default_parms.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles" displayName="源文件" projectFiles="true">
+      <itemPath>main.c</itemPath>
+      <itemPath>mqtt_biz_info.c</itemPath>
+      <itemPath>mqtt_biz_redis.c</itemPath>
+      <itemPath>mqtt_cfg.c</itemPath>
+      <itemPath>mqtt_ft_server_on_msg_arrvd.c</itemPath>
+      <itemPath>redis_cfg.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles" displayName="资源文件" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="测试文件"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <standard>3</standard>
+        </cTool>
+        <linkerTool>
+          <additionalDep>-lpaho-mqtt3cs -lhiredis</additionalDep>
+          <linkerLibItems>
+            <linkerOptionItem>-lpaho-mqtt3cs -lhiredis</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="inc/Thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/hiredis.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_biz_info.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_biz_redis.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_cfg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_cfg_default_parms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_ft_server_on_msg_arrvd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mutex_type.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/redis_cfg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/redis_cfg_default_parms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="mqtt_biz_info.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="mqtt_biz_redis.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="mqtt_cfg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="mqtt_ft_server_on_msg_arrvd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="redis_cfg.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <standard>3</standard>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="inc/Thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/hiredis.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_biz_info.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_biz_redis.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_cfg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_cfg_default_parms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_ft_server_on_msg_arrvd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mqtt_types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/mutex_type.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/redis_cfg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/redis_cfg_default_parms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="mqtt_biz_info.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="mqtt_biz_redis.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="mqtt_cfg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="mqtt_ft_server_on_msg_arrvd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="redis_cfg.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
